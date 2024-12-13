@@ -7,8 +7,7 @@ void setup() {
   Wire.begin();
   rtc.begin();
   Serial.begin(9600);
-  // Uncomment to set the RTC to the current date & time
-  // rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
 }
 
 void loop() {
